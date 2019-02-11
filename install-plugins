@@ -1,0 +1,23 @@
+#!/bin/sh
+
+KICAD_PLUGINS="$HOME/.kicad/scripting/plugins"
+mkdir -p "$KICAD_PLUGINS"
+
+KICAD_GIT="$HOME/.kicad/git"
+mkdir -p "$KICAD_GIT"
+
+# @openscopeproject/InteractiveHtmlBom
+PLUGIN_DIR="$KICAD_GIT/openscopeproject@InteractiveHtmlBom"
+PLUGIN_GIT="https://github.com/openscopeproject/InteractiveHtmlBom"
+if [ ! -d "$PLUGIN_DIR" ]; then
+	git clone "$PLUGIN_GIT" "$PLUGIN_DIR"
+	ln -s "$PLUGIN_DIR" "$KICAD_PLUGINS/InteractiveHtmlBom"
+fi
+
+# @jsreynaud/kicad-action-scripts
+PLUGIN_DIR="$KICAD_GIT/jsreynaud@kicad-action-scripts"
+PLUGIN_GIT="https://github.com/jsreynaud/kicad-action-scripts"
+if [ ! -d "$PLUGIN_DIR" ]; then
+	git clone "$PLUGIN_GIT" "$PLUGIN_DIR"
+	ln -s "$PLUGIN_DIR/ViaStitching" "$KICAD_PLUGINS/ViaStitching"
+fi

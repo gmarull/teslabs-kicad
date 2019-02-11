@@ -1,0 +1,7 @@
+*.swp
+teslabs.kicad_pcb
+teslabs.sch
+*.bak
+*.bck
+fp-lib-table
+fp-info-cache
