@@ -11,6 +11,7 @@ adjustments = {
     "^MSOP-": 270,
     "^CP_Elec": 180,
     "^CP_EIA": 180,
+    "^BatteryHolder_Keystone": 180,
 }
 """Adjustments for packages."""
 
