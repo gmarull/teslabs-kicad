@@ -10,6 +10,7 @@ adjustments = {
     "^SOIC-": 270,
     "^MSOP-": 270,
     "^CP_Elec": 180,
+    "^CP_EIA": 180,
 }
 """Adjustments for packages."""
 
