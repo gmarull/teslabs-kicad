@@ -12,6 +12,8 @@ adjustments = {
     "^CP_Elec": 180,
     "^CP_EIA": 180,
     "^BatteryHolder_Keystone": 180,
+    "^SO-8": 270,
+    "^SO-6": 180,
 }
 """Adjustments for packages."""
 
